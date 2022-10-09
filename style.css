@@ -121,7 +121,7 @@ body {
 
 #hero-mobile {
     display: none;
-    background: url(full-illustration.png) no-repeat center bottom/cover;
+    background: url(gamersarena/full-illustration.png) no-repeat center bottom/cover;
     height: 320px;
 }
 
@@ -146,29 +146,29 @@ body {
 }
 
 .layer-bg {
-    background-image: url(ilu_bg.jpg);
+    background-image: url(gamersarena/ilu_bg.jpg);
 
 }
 
 .layer-1 {
-    background-image: url(ilu_03.png);
+    background-image: url(gamersarena/ilu_03.png);
     background-position: left bottom;
 
 }
 
 .layer-2 {
-    background-image: url(ilu_02.png);
+    background-image: url(gamersarena/ilu_02.png);
 
 }
 
 .layer-3 {
-    background-image: url(ilu_man.png);
+    background-image: url(gamersarena/ilu_man.png);
     background-position: right bottom;
 
 }
 
 .layer-4 {
-    background-image: url(ilu_01.png);
+    background-image: url(gamersarena/ilu_01.png);
 
 }
 
