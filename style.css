@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.loader_bg{
+    
+    position: fixed;
+    z-index: 999999;
+    background: rgb(14 43 47);
+    width: 100%;
+    height: 100%;
+
+}
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    /*change these sizes to fit into your project*/
+    width:100px;
+    height:100px;
+  }
+  .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+  
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#header {
+    position: absolute;
+    top: 0;
+    left: -60PX;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+#header .logo {
+    color: rgb(14 43 47);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+
+}
+
+
+.anthem {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anthem #text {
+    position: absolute;
+    color: rgb(14 43 47);
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-91%);
+    left: 431px;
+
+}
+
+.anthem #text span {
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(35 83 81);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #130d0a;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+}
+
+#hero {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+#content {
+    background-color: #130d0a;
+}
+
+.layer {
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    z-index: -1;
+}
+
+#hero-mobile {
+    display: none;
+    background: url(full-illustration.png) no-repeat center bottom/cover;
+    height: 320px;
+}
+
+.first-section {
+    padding: 50px 0 20px 0;
+}
+
+.text-header {
+    font-size: 50px;
+    text-align: center;
+}
+
+#content h1 {
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+
+#hero,
+.layer {
+    min-height: 800px;
+}
+
+.layer-bg {
+    background-image: url(ilu_bg.jpg);
+
+}
+
+.layer-1 {
+    background-image: url(ilu_03.png);
+    background-position: left bottom;
+
+}
+
+.layer-2 {
+    background-image: url(ilu_02.png);
+
+}
+
+.layer-3 {
+    background-image: url(ilu_man.png);
+    background-position: right bottom;
+
+}
+
+.layer-4 {
+    background-image: url(ilu_01.png);
+
+}
+
+.layer-overlay {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+}
+
+@media only screen and (max-width: 768px) {
+    #hero {
+        display: none;
+    }
+
+    #hero-mobile {
+        display: block;
+    }
+}
+
+.main {
+
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+
+}
+
+.title {
+
+    text-align: center;
+    padding: 10px;
+
+
+
+}
+
+.title h1 {
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(179 236 235);
+}
+
+.des {
+    padding: 3px;
+    text-align: center;
+
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(92 156 152);
+    font-family: 'Silkscreen', cursive;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-top: -20px;
+}
+
+.footer-content p {
+    max-width: 720px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 17px;
+    
+}
+
+
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .popup-content {
+    position: absolute;
+    top: 129em;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(175 63 73);
+    width: 550px;
+    height: 240px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .popup-content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(175 63 73));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, rgb(175 63 73));
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 23px;
+    display: inline-block;
+
+    transition: 0.5s;
+    text-decoration: underline;
+    opacity: 0.75;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+
+.menu__link:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.popup a{
+    text-decoration: none;
+    color: lightgray;
+    font-style:italic ;
+    font-weight: 500;
+}
+.popup p{
+    text-align: left;
+    
+}
+.popup h1{
+    margin-bottom: 20px;
+}
