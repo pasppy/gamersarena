@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Align 4 Game</title>
+  
+  <!--  Styles  -->
+  <link href="https://fonts.googleapis.com/css?family=Doppio+One" rel="stylesheet">
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6em6/+npuv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOnpuv/p6br/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp6br/6em6/wAAAADp6br/6em6vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6em6/+npuv8AAAAA6em6/+npur8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALC5y7/Dycb/AAAAAOnpuv/p6br/AAAAAOnpuv/p6bq/6em6/+npuv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACeq9G/sLrL/wAAAADX2r//6em6/wAAAADp6br/6em6v+npuv/p6br/AAAAAAAAAAAAAAAAAAAAAGuA4P98jtv/jZzWv5+r0f8AAAAAxMrF/9jbv/8AAAAA6em6/+npur/p6br/6em6/wAAAAAAAAAAAAAAAAAAAABcdOX/bIHg/3yP27+Ondb/AAAAALK7y//Fy8X/AAAAAOnpuv/p6bq/6em6/+npuv8AAAAAAAAAAAAAAAAAAAAATmjp/1115f9tgeC/fY/b/wAAAACgrND/s7zK/wAAAADZ3L//6em6v+npuv/p6br/AAAAAAAAAAAAAAAAAAAAAEJe7f9Paen/XnXkv22C3/8AAAAAj57V/6Gt0P8AAAAAx8zE/9rdv7/p6br/6em6/wAAAAAAAAAAAAAAAAAAAAA3VfD/Ql7s/1Bp6L9edeT/AAAAAH6Q2v+Qn9X/AAAAALS9yv/HzcS/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAME/y/zdV8P9DX+y/UGro/wAAAABvg9//f5Ha/wAAAACirs//tb7KvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOFXwv0Nf7P8AAAAAX3fk/2+E3/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADBP8r84VvD/AAAAAFFr6P9gd+P/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEYOz/Umvo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOVbv/0Vg7P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAP5/AAD+TwAA/k8AAPJDAADyQwAAwkMAAMJDAADCQwAAwkMAAMJPAADCTwAA8n8AAPJ/AAD+fwAA/n8AAA==" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="index.processed.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div class="sidebar">
+        <h1>Align 4</h1>
+        <div class="panel dif">
+          <h2>Difficulty</h2>
+          <div class="dif-options">
+            <div>
+              <input id="dif1" type="radio" name="dif-options" value="1">
+              <label for="dif1">1</label>
+            </div>
+            <div>
+              <input id="dif2" type="radio" name="dif-options" value="2">
+              <label for="dif2">2</label>
+            </div>
+            <div>
+              <input id="dif3" type="radio" name="dif-options" value="3" checked>
+              <label for="dif3">3</label>
+            </div>
+            <div>
+              <input id="dif4" type="radio" name="dif-options" value="4">
+              <label for="dif4">4</label>
+            </div>
+            <div>
+              <input id="dif5" type="radio" name="dif-options" value="5">
+              <label for="dif5">5</label>
+            </div>
+          </div>
+          <div class="start">
+            <button>Start Game</button>
+          </div>
+        </div>
+        <div class="panel info">
+          <h2></h2>
+          <div class="blurb"></div>
+          <div class="outlook"></div>
+        </div>
+      </div>
+      <div class="board">
+        <div class="lit-columns">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="lit-cells"></div>
+        <div class="chips"></div>
+        <div class="click-columns">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
