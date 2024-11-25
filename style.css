@@ -121,7 +121,7 @@ body {
 
 #hero-mobile {
     display: none;
-    background: url("./full-illustration.png") no-repeat center bottom/cover;
+    background: url("./full_illustration.png") no-repeat center bottom/cover;
     height: 320px;
 }
 
